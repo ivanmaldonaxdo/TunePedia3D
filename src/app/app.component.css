@@ -1,8 +1,3 @@
-/* img{
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-} */
 .background-image{
     width: 100%;
     height: 100vh; /* Esto asegura que el contenedor ocupe al menos la altura de la ventana */

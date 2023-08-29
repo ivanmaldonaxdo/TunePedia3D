@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { HeaderBaseComponent } from './components/header/header-base/header-base.component';
 import { NavBaseComponent } from './components/header/nav-base/nav-base.component';
 import { HomeComponent } from './pages/home/home.component';
+import { ContentComponent } from './components/content/content.component';
 
 @NgModule({
   declarations: [
@@ -13,6 +14,7 @@ import { HomeComponent } from './pages/home/home.component';
     HeaderBaseComponent,
     NavBaseComponent,
     HomeComponent,
+    ContentComponent,
   ],
   imports: [
     BrowserModule,
