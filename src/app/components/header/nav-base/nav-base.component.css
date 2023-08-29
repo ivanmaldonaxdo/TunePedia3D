@@ -36,7 +36,7 @@
 
 .navBar ul li a {
     padding: var(--padding_bug);
-    color: var(--second-color);
+    color: white;
     font-size: 25.8px;
     text-decoration: none;
     font-family: var(--principal_font);
@@ -56,7 +56,7 @@
     top: 50px;
     left: 0;
     transition: all .5s;
-    box-shadow: inset 0 -3.1px 0 0 var(--second-color);
+    box-shadow: inset 0 -3.1px 0 0 white;
     
 }
 .animation_nav:hover::before{
