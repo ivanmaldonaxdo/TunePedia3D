@@ -62,3 +62,18 @@
 .animation_nav:hover::before{
     width: 100%;
 }
+.actived{
+    position: relative;
+    /* box-shadow: inset 0 -3.1px 0 0 var(--main-color); */
+}
+
+.actived::before {
+    content: " ";
+    position: absolute;
+    height: 3.5px;
+    bottom: 0;
+    top: 62px;
+    left: 0;
+    box-shadow: inset 0 -3.1px 0 0 rgb(39, 209, 201);
+    width: 100%;
+}
