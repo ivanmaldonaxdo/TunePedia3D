@@ -8,6 +8,7 @@ import { NavBaseComponent } from './components/header/nav-base/nav-base.componen
 import { HomeComponent } from './pages/home/home.component';
 import { ContentComponent } from './components/content/content.component';
 import { InstrumentosComponent } from './pages/instrumentos/instrumentos.component';
+import { NavBtnComponent } from './components/buttons/nav-btn/nav-btn.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { InstrumentosComponent } from './pages/instrumentos/instrumentos.compone
     HomeComponent,
     ContentComponent,
     InstrumentosComponent,
+    NavBtnComponent,
   ],
   imports: [
     BrowserModule,
