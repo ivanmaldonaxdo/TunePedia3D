@@ -7,6 +7,7 @@ import { HeaderBaseComponent } from './components/header/header-base/header-base
 import { NavBaseComponent } from './components/header/nav-base/nav-base.component';
 import { HomeComponent } from './pages/home/home.component';
 import { ContentComponent } from './components/content/content.component';
+import { InstrumentosComponent } from './pages/instrumentos/instrumentos.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { ContentComponent } from './components/content/content.component';
     NavBaseComponent,
     HomeComponent,
     ContentComponent,
+    InstrumentosComponent,
   ],
   imports: [
     BrowserModule,
