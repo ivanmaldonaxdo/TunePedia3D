@@ -10,6 +10,7 @@ import { ContentComponent } from './components/content/content.component';
 import { InstrumentosComponent } from './pages/instrumentos/instrumentos.component';
 import { NavBtnComponent } from './components/buttons/nav-btn/nav-btn.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { AngularMaterialModule } from './modules/angular-material/angular-material.module';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    AngularMaterialModule
   ],
   providers: [],
   bootstrap: [AppComponent]
