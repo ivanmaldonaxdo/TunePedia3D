@@ -9,6 +9,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { ContentComponent } from './components/content/content.component';
 import { InstrumentosComponent } from './pages/instrumentos/instrumentos.component';
 import { NavBtnComponent } from './components/buttons/nav-btn/nav-btn.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { NavBtnComponent } from './components/buttons/nav-btn/nav-btn.component'
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
