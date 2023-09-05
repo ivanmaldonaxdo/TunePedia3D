@@ -3,7 +3,7 @@ header {
     height: auto;
     width: 100%;
     justify-content: safe;
-    position: fixed;
+    /* position: fixed; */
     display: flex;
     top: 0;
     left: 0;
