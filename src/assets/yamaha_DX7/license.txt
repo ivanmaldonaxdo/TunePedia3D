@@ -1,0 +1,11 @@
+Model Information:
+* title:	Yamaha Dx7
+* source:	https://sketchfab.com/3d-models/yamaha-dx7-3f80009f37d644639b4a0459c86277df
+* author:	Merow (https://sketchfab.com/TehMerow)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Yamaha Dx7" (https://sketchfab.com/3d-models/yamaha-dx7-3f80009f37d644639b4a0459c86277df) by Merow (https://sketchfab.com/TehMerow) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
