@@ -3,11 +3,12 @@
     margin-left: 100px; */
     margin:100px;
     display: grid;
+    column-gap: 30px;
     grid-template-columns: repeat(4,1fr);
 }
 .example-card {
-    max-width: 400px;
-    max-height: 400px;
+    width: 400px;
+    height: 400px;
 
   }
   
