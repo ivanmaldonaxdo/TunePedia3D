@@ -1,0 +1,41 @@
+p {
+    font-family: Lato;
+}
+article{
+    display: flex;
+    justify-content: center;
+}
+model-viewer {
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;    position: relative;
+    float: left;
+    height:384px; /*20vw;*/
+    width: 864px; /*45vw*/
+    overflow-x: hidden;
+    position:absolute;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media (max-width: 949px) {
+    model-viewer {
+    height: 40vw;
+    width: 72vw;
+    }
+
+}
+
+@media (max-width: 949px) 
+  and (orientation: landscape) {
+    model-viewer {
+        height: 28vw;
+        width: 65vw;
+        }
+
+}
+/* @media screen and (min-aspect-ratio: 4/3) 
+{
+    model-viewer {
+        height: 38vw;
+        width: 65vw;
+        }
+} */

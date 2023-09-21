@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -6,12 +6,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavBtnComponent } from './components/buttons/nav-btn/nav-btn.component';
 import { ContentComponent } from './components/content/content.component';
-import { HeaderBaseComponent } from './components/header/header-base/header-base.component';
 import { NavBaseComponent } from './components/header/nav-base/nav-base.component';
 import { AngularMaterialModule } from './modules/angular-material/angular-material.module';
 import { HomeComponent } from './pages/home/home.component';
 import { InstrumentDetailComponent } from './pages/instrument-detail/instrument-detail.component';
 import { InstrumentosComponent } from './pages/instrumentos/instrumentos.component';
+import { InstrumentMvComponent } from './pages/instrument-mv/instrument-mv.component';
+import { HeaderBaseComponent } from './components/header/header-base/header-base.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { InstrumentosComponent } from './pages/instrumentos/instrumentos.compone
     InstrumentosComponent,
     NavBtnComponent,
     InstrumentDetailComponent,
+    InstrumentMvComponent
   ],
   imports: [
     BrowserModule,
@@ -31,6 +33,7 @@ import { InstrumentosComponent } from './pages/instrumentos/instrumentos.compone
     AngularMaterialModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  schemas: [ CUSTOM_ELEMENTS_SCHEMA ]
 })
 export class AppModule { }
