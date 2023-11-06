@@ -1,11 +1,12 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { MusicalInstrument } from 'src/app/models/musicalInstrument';
+import { InstrumentsService } from 'src/app/services/instruments.service';
 @Component({
   selector: 'app-instrumentos',
   templateUrl: './instrumentos.component.html',
   styleUrls: ['./instrumentos.component.css'],
 })
-export class InstrumentosComponent {
+export class InstrumentosComponent implements OnInit {
   musicalInsList: Array<MusicalInstrument> = [
     {
       name: 'Korg X5D',
@@ -26,4 +27,24 @@ export class InstrumentosComponent {
         'https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/YAMAHA_DX7.jpg/1024px-YAMAHA_DX7.jpg',
     },
   ];
+  // musicalInsList: Array<MusicalInstrument> = [];
+  constructor(private instService: InstrumentsService) {}
+  ngOnInit(): void {
+    this.getInstruments();
+  }
+  getInstruments(): void {
+    // this.instService.getInstruments().subscribe((instrumentos) => {
+    //   this.musicalInsList = instrumentos.map(
+    //     (i: { name: any; image: any; description: any }) => ({
+    //       name: i.name,
+    //       imageSRC: i.image,
+    //       description: i.description,
+    //     })
+    //   );
+    // });
+
+    this.instService
+      .getInstruments()
+      .subscribe(instrumentos => console.log(instrumentos));
+  }
 }

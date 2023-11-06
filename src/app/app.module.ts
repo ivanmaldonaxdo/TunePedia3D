@@ -13,6 +13,8 @@ import { InstrumentDetailComponent } from './pages/instrument-detail/instrument-
 import { InstrumentosComponent } from './pages/instrumentos/instrumentos.component';
 import { InstrumentMvComponent } from './pages/instrument-mv/instrument-mv.component';
 import { HeaderBaseComponent } from './components/header/header-base/header-base.component';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { InstrumentsService } from './services/instruments.service';
 
 @NgModule({
   declarations: [
@@ -30,9 +32,10 @@ import { HeaderBaseComponent } from './components/header/header-base/header-base
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    AngularMaterialModule
+    AngularMaterialModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [InstrumentsService],
   bootstrap: [AppComponent],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA ]
 })
