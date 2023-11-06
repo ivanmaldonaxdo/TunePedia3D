@@ -4,7 +4,8 @@
   margin: 100px;
   display: grid;
   column-gap: 30px;
-  grid-template-columns: repeat(4, 1fr);
+  row-gap: 30px;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
 }
 
 .example-card {

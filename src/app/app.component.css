@@ -1,6 +1,7 @@
 .background-image{
     width: 100%;
-    height: 100vh; /* Esto asegura que el contenedor ocupe al menos la altura de la ventana */
+    min-height: 100vh;
+    height: auto; /* Esto asegura que el contenedor ocupe al menos la altura de la ventana */
     background-image: url('../assets/9_yutyty_1231.jpg');
     background-size: cover;
     background-position: center;
