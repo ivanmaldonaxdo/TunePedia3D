@@ -1,6 +1,8 @@
-export interface MusicalInstrument{
-    name: string;
-    description?: string;
-    imageSRC?: string;
-    model?: string;
+export interface MusicalInstResp {
+  artist?: string[];
+  description: string;
+  glbModel: string;
+  image: string;
+  name: string;
+  base64_data?:string;
 }

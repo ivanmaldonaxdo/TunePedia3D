@@ -20,7 +20,7 @@
   ar-status="not-presenting"
 >
 </model-viewer> -->
-<article>
+<!-- <article>
   <model-viewer
     camera-controls
     camera-orbit="0 40deg calc(1m - env(window-scroll-y) * 10m)"
@@ -30,4 +30,24 @@
     ar-status="not-presenting"
   >
   </model-viewer>
+</article> -->
+
+<article>
+
+  <model-viewer
+  camera-controls
+  camera-orbit="0deg 24deg 0m"
+  src="{{urlFile}}"
+  alt="A 3D model of an astronaut"
+  data-js-focus-visible=""
+  ar-status="not-presenting"
+  >
+  </model-viewer>
+
 </article>
+
+<div *ngIf="instrument">
+  <h3>{{instrument.name}}</h3>
+  <h3>{{instrument.description}}</h3>
+  <h3>{{urlFile}}</h3>
+</div>
