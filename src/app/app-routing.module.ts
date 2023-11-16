@@ -19,7 +19,7 @@ const routes: Routes = [
     component: InstrumentDetailComponent,
   },
   {
-    path:"instrumentmv/:id",
+    path:"instruments/:id",
     component:InstrumentMvComponent
   }
 ];
