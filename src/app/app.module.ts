@@ -15,6 +15,7 @@ import { InstrumentMvComponent } from './pages/instrument-mv/instrument-mv.compo
 import { HeaderBaseComponent } from './components/header/header-base/header-base.component';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { InstrumentsService } from './services/instruments.service';
+import { MatChipsModule } from '@angular/material/chips';
 
 @NgModule({
   declarations: [
@@ -26,17 +27,18 @@ import { InstrumentsService } from './services/instruments.service';
     InstrumentosComponent,
     NavBtnComponent,
     InstrumentDetailComponent,
-    InstrumentMvComponent
+    InstrumentMvComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     AngularMaterialModule,
-    HttpClientModule
+    HttpClientModule,
+    MatChipsModule
   ],
   providers: [InstrumentsService],
   bootstrap: [AppComponent],
-  schemas: [ CUSTOM_ELEMENTS_SCHEMA ]
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
-export class AppModule { }
+export class AppModule {}

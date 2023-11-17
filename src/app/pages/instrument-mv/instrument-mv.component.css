@@ -1,11 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins:wght@300&family=Roboto:wght@400;700&display=swap');
+
 p {
     font-family: Lato;
 }
 article{
     display: flex;
     justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
 }
-model-viewer {
+model-viewer{
     box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;    position: relative;
     float: left;
     height:384px; /*20vw;*/
@@ -15,11 +20,79 @@ model-viewer {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 24px; /* Espacio entre .model-viewer y .img-detail */
+
+}
+
+.img-detail{    
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;    position: relative;
+    overflow-x: hidden;
+    position:absolute;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 864px; /*45vw*/
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.08); /* Ajusta el último valor (0.08) para cambiar la opacidad */
+    margin-bottom: 24px; /* Espacio entre .model-viewer y .img-detail */
+
+}
+
+
+.img-detail >img{
+    width: 864px; /*45vw*/
+
+    /*this makes the image in src fit to the size specified below*/
+    margin-top: auto;
+    margin-right: auto;
+}
+
+.data-inst{
+    width: 40%;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;    position: relative;
+    height:384px; /*20vw;*/
+    /* margin-top: 424px; */
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5rem;
+    background-color: rgba(0, 0, 0, 0.08); /* Ajusta el último valor (0.08) para cambiar la opacidad */
+}
+
+.data-inst > h1{
+    font-weight: 700;
+    font-size: 1.875rem ;
+    line-height: 2.25rem;
+    margin-top: 1rem;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.data-inst > p{
+    font-family: 'Poppins', sans-serif;
+    line-height: 22px;
+    margin-top: 1.5rem;
+    /* color: wheat; */
+    font-weight: 300;
+    overflow: hidden;
+    /* Añade puntos suspensivos (...) al final del texto truncado */
+    /* text-overflow: ellipsis;  */
+  /* Evita que el texto se divida en varias líneas */
+  /* white-space: nowrap; */
+    max-width: 90ch;
+}
+.usedBy{
+    margin-top: 1.5rem;
+    font-family: 'Poppins', sans-serif;
+
+}
+.example-chip{
+    margin-top: 0.7rem;
 }
 @media (max-width: 949px) {
     model-viewer {
     height: 40vw;
     width: 72vw;
+    
     }
 
 }

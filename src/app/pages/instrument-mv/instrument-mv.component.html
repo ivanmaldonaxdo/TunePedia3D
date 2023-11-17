@@ -33,21 +33,30 @@
 </article> -->
 
 <article>
-
   <model-viewer
-  camera-controls
-  camera-orbit="0deg 24deg 0m"
-  src="{{urlFile}}"
-  alt="A 3D model of an astronaut"
-  data-js-focus-visible=""
-  ar-status="not-presenting"
-  >
+    *ngIf="instrument.glbModel != ''; else image"
+    #mViewer camera-controls
+    camera-orbit="0deg 24deg 0m" src="{{ urlFile }}"
+    alt="A 3D model of an astronaut"
+    data-js-focus-visible="" ar-status="not-presenting">
   </model-viewer>
 
+  <ng-template #image>
+    <section class="img-detail" #imgDetail>
+      <img mat-card-image src="{{ instrument.image }}" alt="Photo of a Shiba Inu"/>
+    </section>
+  </ng-template>
+  
+  <section class="data-inst" [style.margin-top]="marginTop">
+    <h1>{{ instrument.name }}</h1>
+    <p class="mb-4">{{ instrument.description }}</p>
+    <h3 class="usedBy">Usado por:</h3>
+    <mat-chip-listbox class="example-chip"cdkDropList
+      cdkDropListOrientation="horizontal">
+      <mat-chip-option *ngFor="let art of instrument.artist"
+        class="example-box" cdkDrag selected color="primary">
+        {{ art }}
+      </mat-chip-option>
+    </mat-chip-listbox>
+  </section>
 </article>
-
-<div *ngIf="instrument">
-  <h3>{{instrument.name}}</h3>
-  <h3>{{instrument.description}}</h3>
-  <h3>{{urlFile}}</h3>
-</div>
