@@ -48,7 +48,7 @@ model-viewer{
 }
 
 .data-inst{
-    width: 40%;
+    max-width: 40%;
     box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;    position: relative;
     height:384px; /*20vw;*/
     /* margin-top: 424px; */
@@ -85,14 +85,43 @@ model-viewer{
     font-family: 'Poppins', sans-serif;
 
 }
+.demo {
+    margin-top: 2.5rem;
+    font-family: 'Poppins', sans-serif;
+}
 .example-chip{
     margin-top: 0.7rem;
 }
+
+audio{
+    margin-top: 0.7rem;
+}
+/* video:-webkit-full-page-media {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    max-height: 100%;
+    max-width: 100%;
+    margin: auto;
+}
+
+video {
+    object-fit: contain;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+} */
+
 @media (max-width: 949px) {
     model-viewer {
     height: 40vw;
     width: 72vw;
     
+    }
+    .data-inst{
+        max-width: 60%;
+        height: auto;
     }
 
 }

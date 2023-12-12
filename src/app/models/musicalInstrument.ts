@@ -5,4 +5,5 @@ export interface MusicalInstResp {
   image: string;
   name: string;
   base64_data?:string;
+  demo?:string;
 }
