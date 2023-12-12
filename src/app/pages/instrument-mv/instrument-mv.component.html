@@ -54,7 +54,7 @@
     </mat-chip-listbox>
     <h3 class="demo">Demo:</h3>
     <!-- En el template de tu componente Angular -->
-    <audio controls="" autoplay="" name="media"  *ngIf="instrument.demo">
+    <audio controls="" autoplay="" name="media"  *ngIf="instrument.demo" #audioConfig>
        <source [src]="instrument.demo" type="audio/mpeg">
     </audio>
   </section>

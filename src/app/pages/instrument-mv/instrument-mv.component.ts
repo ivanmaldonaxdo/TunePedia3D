@@ -12,11 +12,17 @@ export class InstrumentMvComponent implements OnInit, AfterViewInit{
   slug!: string;
   instrument!: MusicalInstResp;
   urlFile: string = '';
+
   @ViewChild('mViewer')
   modelVw!: ElementRef;
+
   @ViewChild('imgDetail') 
   imgDetail!: ElementRef;
   marginTop:string = "0px"
+
+  @ViewChild('audioConfig')
+  audioConfig!: ElementRef;
+
   constructor(
     private route: ActivatedRoute,
     private instService: InstrumentsService,
@@ -28,6 +34,11 @@ export class InstrumentMvComponent implements OnInit, AfterViewInit{
     const px = this.getPX().replace('px','')
     const padding = parseInt(px)+40;
     this.marginTop = `${padding}px`
+
+    /**
+     * Ajuste de nivel de volumen por defecto
+     */
+    this.audioConfig.nativeElement.volume = 0.18;
   
   }
   ngOnInit(): void {
@@ -36,6 +47,9 @@ export class InstrumentMvComponent implements OnInit, AfterViewInit{
     
   }
 
+  /**
+   * Se obtiene intrumento desde 
+   */
   getInstrument(): void {
     this.instService.getInstrument(this.slug).subscribe((ins) => {
       this.instrument = ins[0];
