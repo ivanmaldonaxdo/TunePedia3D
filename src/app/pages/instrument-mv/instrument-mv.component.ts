@@ -48,7 +48,7 @@ export class InstrumentMvComponent implements OnInit, AfterViewInit{
   }
 
   /**
-   * Se obtiene intrumento desde 
+   * Se obtiene intrumento por slug
    */
   getInstrument(): void {
     this.instService.getInstrument(this.slug).subscribe((ins) => {
@@ -59,7 +59,6 @@ export class InstrumentMvComponent implements OnInit, AfterViewInit{
       console.log(ins);
     });
   
-    // Verificar si instrument.glbModel es definido antes de obtener la URL del archivo
   }
   getPX(){
     if(this.urlFile != ''){

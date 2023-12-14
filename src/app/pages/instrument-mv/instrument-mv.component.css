@@ -31,17 +31,19 @@ model-viewer{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 864px; /*45vw*/
+    width: 45vw;
     height: auto;
     background-color: rgba(0, 0, 0, 0.08); /* Ajusta el último valor (0.08) para cambiar la opacidad */
     margin-bottom: 24px; /* Espacio entre .model-viewer y .img-detail */
+    overflow-y: hidden;
 
 }
 
 
 .img-detail >img{
-    width: 864px; /*45vw*/
-
+    width: 45vw;
+    /*45vw*/
+    /* width: 864px;  */
     /*this makes the image in src fit to the size specified below*/
     margin-top: auto;
     margin-right: auto;
@@ -56,6 +58,7 @@ model-viewer{
     margin-right: auto;
     padding: 1.5rem;
     background-color: rgba(0, 0, 0, 0.08); /* Ajusta el último valor (0.08) para cambiar la opacidad */
+    height: auto;
 }
 
 .data-inst > h1{
@@ -79,6 +82,7 @@ model-viewer{
   /* Evita que el texto se divida en varias líneas */
   /* white-space: nowrap; */
     max-width: 90ch;
+    color: rgb(255, 255, 255);
 }
 .usedBy{
     margin-top: 1.5rem;
@@ -86,7 +90,7 @@ model-viewer{
 
 }
 .demo {
-    margin-top: 2.5rem;
+    margin-top: 1.5rem;
     font-family: 'Poppins', sans-serif;
 }
 .example-chip{
@@ -95,6 +99,10 @@ model-viewer{
 
 audio{
     margin-top: 0.7rem;
+}
+
+.notAudioText{
+    font-family: 'Poppins', sans-serif;
 }
 /* video:-webkit-full-page-media {
     position: absolute;
@@ -124,6 +132,14 @@ video {
         height: auto;
     }
 
+    .img-detail {
+        height: 30vw;
+        width: auto;
+    }
+    .img-detail > img {
+        height: 30vw;
+        width: auto;
+    }
 }
 
 @media (max-width: 949px) 
