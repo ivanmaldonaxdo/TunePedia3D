@@ -123,22 +123,26 @@ video {
 
 @media (max-width: 949px) {
     model-viewer {
-    height: 40vw;
-    width: 72vw;
+        height: 40vw;
+        width: 72vw;
     
     }
     .data-inst{
-        max-width: 60%;
+        max-width: 80%;
         height: auto;
     }
 
     .img-detail {
         height: 30vw;
         width: auto;
+        max-width: 100vw;
+
     }
     .img-detail > img {
         height: 30vw;
         width: auto;
+        max-width: 90vw;
+
     }
 }
 
@@ -148,6 +152,17 @@ video {
         height: 28vw;
         width: 65vw;
         }
+
+
+        
+}
+
+@media (max-width: 500px) 
+ {
+    .data-inst{
+        max-width: 70%;
+        height: auto;
+    }
 
 }
 /* @media screen and (min-aspect-ratio: 4/3) 
