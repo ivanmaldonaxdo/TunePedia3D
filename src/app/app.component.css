@@ -5,4 +5,8 @@
     background-image: url('../assets/9_yutyty_1231.jpg');
     background-size: cover;
     background-position: center;
+    opacity: 2; 
+    /* Ajusta el valor para cambiar la opacidad */
+
+
 }

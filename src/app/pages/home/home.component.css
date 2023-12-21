@@ -1,0 +1,35 @@
+.home-container {
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;    
+    position: relative;
+
+  /* margin-top: 100px;
+    margin-left: 100px; */
+    /* margin: 70px; */
+    display: block;
+    /* column-gap: 31px; */
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: 800px;
+    /* border: 1px solid black; */
+    padding: 40px; /* Ajusta este valor según sea necesario */
+
+}
+
+.home-container > h1{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 1;
+    margin-bottom: 1rem;
+}
+
+
+.home-container > p {
+    color: #ffff; /* Gris oscuro como alternativa al blanco */
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    line-height: 2rem;
+
+}
