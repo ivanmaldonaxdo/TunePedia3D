@@ -6,7 +6,8 @@ import { MusicalInstResp } from '../models/musicalInstrument';
   providedIn: 'root',
 })
 export class InstrumentsService {
-  uri = 'http://127.0.0.1:4000';
+  uri = 'https://tunepedia-devanjx.koyeb.app/';
+  localUri = "http://127.0.0.1:4000";
   constructor(private http: HttpClient) {}
 
   getInstruments(){
