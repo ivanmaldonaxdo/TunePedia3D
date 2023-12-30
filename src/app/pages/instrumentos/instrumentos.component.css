@@ -3,7 +3,7 @@
 .items {
   /* margin-top: 100px;
     margin-left: 100px; */
-  margin: 70px;
+  margin-top: 70px;
   display: grid;
   /* column-gap: 31px; */
   row-gap: 30px;
@@ -52,4 +52,16 @@
   object-fit: cover;
   /*this makes the image in src fit to the size specified below*/
   width: 92%;
+}
+
+@media (max-width: 500px) {
+  .example-card {
+    width: 100%;
+    max-width: 284px;
+    height: 280px;
+  }
+
+  .img-item a> img {
+    width: 92%;
+  }
 }
