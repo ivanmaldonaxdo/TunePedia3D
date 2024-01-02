@@ -5,8 +5,52 @@
     background-image: url('../assets/9_yutyty_1231.jpg');
     background-size: cover;
     background-position: center;
-    opacity: 2; 
-    /* Ajusta el valor para cambiar la opacidad */
+    /* clip-path: inset(0 0 0 40%);  */
+    /* Ajusta los valores según tus necesidades */
+    position: relative;
+}
 
+
+
+@media screen and (width >= 1440px) {
+    .background-image::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to right, rgba(0, 0, 0, 0.09), rgba(0, 0, 0, 0.09));
+    }
+    
+    .router-outlet-content {
+        position: relative;
+        z-index: 2;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+}
+
+
+@media screen and (width >=768px ) and (width < 1440px) {
+    .background-image::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to right, rgba(0, 0, 0, 0.09), rgba(0, 0, 0, 0.09));
+    }
+    
+    .router-outlet-content {
+        position: relative;
+        z-index: 2;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
 
 }

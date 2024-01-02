@@ -18,18 +18,38 @@ header {
 } */
 img {
     height: 90px;
+    margin-top: 0;
     width: auto;
     margin-left: 15px;
+    position:relative;
 }
 
 @media (max-width: 779px) {
     header {
+        display: grid;
+        grid-template-areas: 
+            'nav-btn img' 
+            'nav-base nav-base';
+        grid-template-rows: auto auto;
+        align-items: center;
         justify-content: space-between;
     }
-    img{
-        margin-right: 15px;
-        /* PONE EN ORDEN LA IMAGEN PARA QUE QUEDE COMO 2DO ELEMENTO DESPUES */
-        order: 2;
+
+    app-nav-btn {
+        grid-area: nav-btn;
+        order: initial;
     }
+
+    img {
+        grid-area: img;
+        order: initial;
+        width: auto;
+    }
+
+    app-nav-base {
+        grid-area: nav-base;
+        order: initial;
+    }
+
 
 }
