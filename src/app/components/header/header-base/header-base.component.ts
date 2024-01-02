@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-header-base',
@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./header-base.component.css']
 })
 export class HeaderBaseComponent {
+  @Input() isNavVisible:boolean = false;
 
 }
