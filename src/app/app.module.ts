@@ -16,6 +16,7 @@ import { HeaderBaseComponent } from './components/header/header-base/header-base
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { InstrumentsService } from './services/instruments.service';
 import { MatChipsModule } from '@angular/material/chips';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { MatChipsModule } from '@angular/material/chips';
     BrowserAnimationsModule,
     AngularMaterialModule,
     HttpClientModule,
-    MatChipsModule
+    MatChipsModule,
+    FormsModule  
   ],
   providers: [InstrumentsService],
   bootstrap: [AppComponent],
