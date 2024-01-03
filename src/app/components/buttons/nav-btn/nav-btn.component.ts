@@ -5,7 +5,7 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
   styleUrls: ['./nav-btn.component.css']
 })
 export class NavBtnComponent {
-  @Input() isClicked: boolean = false;
+  @Input() isClicked: boolean = true;
   @Output("eventNavVisible") eventVisible = new EventEmitter();
   testBtn() {
     console.log("Pruebita test");
